@@ -245,6 +245,17 @@ button,
               align-items: stretch;
       padding: 0; } }
 
+.header__location {
+  display: none; }
+  @media (max-width: 1024px) {
+    .header__location {
+      display: block;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      color: #7BA6DB;
+      margin-right: 16px; } }
+
 .header__menu-toggle {
   position: relative;
   display: -webkit-box;
