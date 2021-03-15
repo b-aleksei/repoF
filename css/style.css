@@ -235,6 +235,34 @@ button,
       width: 100%;
       max-width: 350px;
       margin: 0 auto; } }
+  .btn--map {
+    position: relative;
+    z-index: 0; }
+    .btn--map::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -2px;
+      bottom: -2px;
+      left: -2px;
+      right: -2px;
+      background-color: #7BA6DB;
+      -webkit-transform: scale3d(0, 1, 1);
+              transform: scale3d(0, 1, 1);
+      -webkit-transition-property: background-color, -webkit-transform;
+      transition-property: background-color, -webkit-transform;
+      transition-property: background-color, transform;
+      transition-property: background-color, transform, -webkit-transform;
+      -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+      -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.3, 1);
+              transition-timing-function: cubic-bezier(0.25, 0.1, 0.3, 1); }
+    .btn--map:hover::before, .btn--map:focus::before {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1); }
+    @media (max-width: 1024px) {
+      .btn--map {
+        text-transform: uppercase; } }
   .btn--blue {
     background: #7BA6DB;
     -webkit-transition: background-color 0.3s, border-color 0.3s;
@@ -761,34 +789,9 @@ ol li {
       display: block;
       margin-bottom: 32px; } }
 
-.header__btn-map {
-  position: relative;
-  z-index: 0; }
-  .header__btn-map::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    background-color: #7BA6DB;
-    -webkit-transform: scale3d(0, 1, 1);
-            transform: scale3d(0, 1, 1);
-    -webkit-transition-property: background-color, -webkit-transform;
-    transition-property: background-color, -webkit-transform;
-    transition-property: background-color, transform;
-    transition-property: background-color, transform, -webkit-transform;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.3, 1);
-            transition-timing-function: cubic-bezier(0.25, 0.1, 0.3, 1); }
-  .header__btn-map:hover::before, .header__btn-map:focus::before {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1); }
-  @media (max-width: 1100px) {
-    .header__btn-map {
-      padding: 10px 22px; } }
+@media (max-width: 1120px) {
+  .header__btn-map {
+    padding: 10px 22px; } }
 
 .burger-menu {
   --font-size: 20px;
@@ -1944,6 +1947,13 @@ ol li {
   @media (max-width: 860px) {
     .footer__top-links {
       margin: 0 0 32px 0; } }
+  @media (max-width: 768px) {
+    .footer__top-links {
+      font-size: 24px; } }
+
+@media (max-width: 768px) {
+  .footer__nav-link {
+    font-size: 18px; } }
 
 .footer__nav-link,
 .footer__phone,
@@ -1961,31 +1971,7 @@ ol li {
   margin-bottom: 8px; }
 
 .footer__btn-map {
-  position: relative;
-  z-index: 0;
   padding: 12px 16px; }
-  .footer__btn-map::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    background-color: #7BA6DB;
-    -webkit-transform: scale3d(0, 1, 1);
-            transform: scale3d(0, 1, 1);
-    -webkit-transition-property: background-color, -webkit-transform;
-    transition-property: background-color, -webkit-transform;
-    transition-property: background-color, transform;
-    transition-property: background-color, transform, -webkit-transform;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.3, 1);
-            transition-timing-function: cubic-bezier(0.25, 0.1, 0.3, 1); }
-  .footer__btn-map:hover::before, .footer__btn-map:focus::before {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1); }
 
 .footer__bottom {
   display: -webkit-box;
@@ -2044,6 +2030,10 @@ ol li {
   .footer .social-icons__list svg {
     width: 24px;
     height: 24px; }
+    @media (max-width: 1024px) {
+      .footer .social-icons__list svg {
+        width: 36px;
+        height: 36px; } }
 
 .footer .social-icons__item {
   margin-bottom: 16px; }
