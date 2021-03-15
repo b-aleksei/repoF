@@ -1,0 +1,46 @@
+[
+  {
+    "name": "ООО \"Домкомплект\"",
+    "address": "СПб, Шоссе Революции, д. 114, офис 223/3",
+    "phone": "+7 (812) 407-18-01",
+    "email": "info@septik-pro.com",
+    "site": "www.septik-pro.com",
+    "position": {
+      "lat": 55.802090,
+      "lng": 37.532620
+    }
+  },
+  {
+    "name": "ООО \"Домкомплект\"",
+    "address": "СПб, Шоссе Революции, д. 114, офис 223/3",
+    "phone": "+7 (812) 407-18-01",
+    "email": "info@septik-pro.com",
+    "site": "www.septik-pro.com",
+    "position": {
+      "lat": 55.692177,
+      "lng": 37.527851
+    }
+  },
+  {
+    "name": "ООО \"Домкомплект\"",
+    "address": "СПб, Шоссе Революции, д. 114, офис 223/3",
+    "phone": "+7 (812) 407-18-01",
+    "email": "info@septik-pro.com",
+    "site": "www.septik-pro.com",
+    "position": {
+      "lat": 55.738794,
+      "lng": 37.410931
+    }
+  },
+  {
+    "name": "ООО \"Домкомплект\"",
+    "address": "СПб, Шоссе Революции, д. 114, офис 223/3",
+    "phone": "+7 (812) 407-18-01",
+    "email": "info@septik-pro.com",
+    "site": "www.septik-pro.com",
+    "position": {
+      "lat": 55.911110,
+      "lng": 37.396477
+    }
+  }
+]
