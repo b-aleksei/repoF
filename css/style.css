@@ -1251,14 +1251,7 @@ button,
 
 .application__title {
   margin-bottom: 16px;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 1.3;
-  color: #1B1E23;
   text-align: center; }
-  @media (max-width: 768px) {
-    .application__title {
-      font-size: 28px; } }
 
 .application__text {
   margin-bottom: 40px;
