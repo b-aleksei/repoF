@@ -13,10 +13,10 @@
   
   
   
-
-
     <script defer src="js/vendor.min.js"></script>
     <script defer src="js/common.min.js"></script>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClBeSxWsn83flGwrimwAFY73_HS9VeYqE"></script>
   
   <script defer src="js/models.min.js"></script>
 
@@ -323,7 +323,7 @@
   <div class="header__wrap">
     <div class="header__inner">
       <div class="header__left">
-        <button class="header__location" type="button" aria-label="контакты">
+        <button class="header__location" type="button" data-modal-open="dealers-map" aria-label="контакты">
           
   <svg width="24" height="24">
     <use href="#location"></use>
@@ -437,7 +437,7 @@
   </ul>
 </div>
 
-        <button class="btn btn--map header__btn-map" type="button">Где купить?</button>
+        <button class="btn btn--map header__btn-map" type="button" data-modal-open="dealers-map">Где купить?</button>
       </div>
     </div>
   </div>
@@ -851,6 +851,44 @@
 
 
 </main>
+<div id="dealers-map" class="modal">
+  <div class="modal__wrap">
+    <div class="modal__inner">
+      <button class="modal__close modal__close--dealers" type="button" data-modal-close="dealers-map">
+        
+  <svg width="26" height="26">
+    <use href="#close"></use>
+  </svg>
+
+      </button>
+      <section class="dealers">
+  <div class="dealers__title">
+    <h2>Официальные дилеры в</h2>
+    <div class="custom-select">
+  <div class="custom-select__title">Санкт-Петербург</div>
+  <div class="custom-select__content">
+    <input id="singleSelect0" class="visually-hidden" type="radio" name="city" value="spb" checked />
+    <label for="singleSelect0" class="custom-select__label">Санкт-Петербург</label>
+    <input id="singleSelect1" class="visually-hidden" type="radio" name="city" value="moscow" />
+    <label for="singleSelect1" class="custom-select__label">Москва</label>
+    <input id="singleSelect2" class="visually-hidden" type="radio" name="city" value="vasuki" />
+    <label for="singleSelect2" class="custom-select__label">Новые Васюки</label>
+    <input id="singleSelect3" class="visually-hidden" type="radio" name="city" value="samara" />
+    <label for="singleSelect3" class="custom-select__label">Самара</label>
+  </div>
+</div>
+
+  </div>
+  <div class="dealers__container">
+    <div class="dealers__map"></div>
+    <ul id="dealers-list" class="dealers__list">
+    </ul>
+  </div>
+</section>
+
+    </div>
+  </div>
+</div>
 
 
   

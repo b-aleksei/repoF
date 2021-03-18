@@ -1,0 +1,31 @@
+{
+  "city": "spb",
+  "centerCoordinates": {
+    "lat": 59.763667,
+    "lng": 30.197653
+  },
+  "dealers" : [
+    {
+      "name": "ООО \"СМК Форс Групп\"",
+      "address": "СПб, ул. Свободы, д. 50, литера М, оф. 2/4",
+      "phone": "+7 (812) 111-11-11",
+      "email": "info@forcegroup-spb.ru",
+      "site": "https://forcegroup-spb.ru",
+      "position": {
+        "lat": 59.729099,
+        "lng": 30.061260
+      }
+    },
+    {
+      "name": "ООО \"Единые инженерные решения\"",
+      "address": "СПб, ул. Свободы, д. 50",
+      "phone": "+7 (812) 111-11-11",
+      "email": "stroyka_spb78@mail.ru",
+      "site": "https://дачныйкомфорт.рф",
+      "position": {
+        "lat": 59.749889,
+        "lng": 30.305847
+      }
+    }
+  ]
+}
