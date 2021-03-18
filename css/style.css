@@ -216,6 +216,8 @@ button,
   color: white;
   -webkit-transition: color 0.3s;
   transition: color 0.3s; }
+  .logo svg {
+    pointer-events: none; }
   @media (max-width: 1100px) {
     .logo {
       width: 124px;
@@ -436,6 +438,57 @@ button,
   line-height: 1.5;
   letter-spacing: .04em;
   color: #7C8087; }
+
+.marked-list-blue {
+  counter-reset: blue-number;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .marked-list-blue li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: .015em;
+    color: #1D1D1D; }
+    @media (max-width: 768px) {
+      .marked-list-blue li {
+        font-size: 16px; } }
+    .marked-list-blue li::before {
+      content: counter(blue-number);
+      counter-increment: blue-number;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 72px;
+      height: 72px;
+      margin-right: 28px;
+      font-size: 40px;
+      color: white;
+      background-color: #7BA6DB;
+      border-radius: 50%; }
+      @media (max-width: 768px) {
+        .marked-list-blue li::before {
+          width: 56px;
+          height: 56px;
+          margin-right: 16px;
+          font-size: 32px; } }
+  .marked-list-blue li + li {
+    margin-top: 40px; }
 
 .text-page {
   max-width: 810px;
@@ -1128,6 +1181,8 @@ ol li {
   margin-left: 28px;
   font-size: 20px;
   color: #303439; }
+  .info__list--no-offset {
+    margin: 0; }
   @media (max-width: 768px) {
     .info__list {
       margin-left: 0;
@@ -1183,12 +1238,16 @@ ol li {
               flex-direction: row;
       padding: 0; } }
   .stable__item p {
-    text-align: center; }
+    text-align: center;
+    padding: 0 30px; }
     @media (max-width: 1024px) {
-      .stable__item p br {
-        display: none; } }
+      .stable__item p {
+        padding: 0 15px; }
+        .stable__item p br {
+          display: none; } }
     @media (max-width: 768px) {
       .stable__item p {
+        padding: 0;
         text-align: left; } }
 
 .stable__img-wrap {
@@ -1674,6 +1733,23 @@ ol li {
   .dealers__item p {
     letter-spacing: .04em;
     color: #7C8087; }
+
+.dealers-stage {
+  background: #F4F6FA; }
+  .dealers-stage h2 {
+    margin-bottom: 98px; }
+    @media (max-width: 768px) {
+      .dealers-stage h2 {
+        margin-bottom: 40px; } }
+
+.dealers-stage__wrap {
+  display: -ms-grid;
+  display: grid; }
+
+.dealers-stage__btn {
+  display: inline-block;
+  text-align: center;
+  margin: 72px auto 0; }
 
 .custom-select {
   position: relative;
