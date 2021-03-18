@@ -62,6 +62,13 @@ body {
   color: #1B1E23; }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
@@ -235,7 +242,8 @@ button,
       flex-shrink: 0;
   font-weight: 600;
   color: white;
-  border: 2px solid #7BA6DB; }
+  border: 2px solid #7BA6DB;
+  text-align: center; }
   @media (max-width: 1024px) {
     .btn {
       padding: 10px 22px; } }
@@ -1748,7 +1756,6 @@ ol li {
 
 .dealers-stage__btn {
   display: inline-block;
-  text-align: center;
   margin: 72px auto 0; }
 
 .custom-select {
@@ -2622,3 +2629,47 @@ ol li {
 .specifications__term {
   margin-bottom: 8px;
   font-weight: 600; }
+
+.not-found {
+  display: -ms-grid;
+  display: grid;
+  height: calc(100 * var(--vh, 1vh) - var(--header-height));
+  place-items: center;
+  background-color: #212429;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 36, 41, 0.9)), to(rgba(33, 36, 41, 0.9))), url("../../img/content/station1.png");
+  background-image: linear-gradient(rgba(33, 36, 41, 0.9), rgba(33, 36, 41, 0.9)), url("../../img/content/station1.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .not-found h1 {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 180px;
+    line-height: 1;
+    letter-spacing: .02em; }
+    @media (max-width: 768px) {
+      .not-found h1 {
+        font-size: 120px; } }
+
+.not-found__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 490px;
+  padding: 0 16px;
+  color: white;
+  /*  @media (max-width: $viewport-s) {
+    padding: 200px 16px;
+  }*/ }
+  .not-found__wrap p {
+    text-align: center; }
+
+.not-found__link {
+  display: inline-block;
+  margin: 48px auto 0; }
