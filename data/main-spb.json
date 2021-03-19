@@ -1,0 +1,20 @@
+{
+  "city": "spb",
+  "centerCoordinates": {
+    "lat": 59.729099,
+    "lng": 30.061260
+  },
+  "dealers" : [
+    {
+      "name": "ООО \"СМК Форс Групп\"",
+      "address": "СПб, ул. Свободы, д. 50, литера М, оф. 2/4",
+      "phone": "+7 (800) 555-55-55",
+      "email": "info@forcegroup-spb.ru",
+      "site": "https://forcegroup-spb.ru",
+      "position": {
+        "lat": 59.729099,
+        "lng": 30.061260
+      }
+    }
+  ]
+}
