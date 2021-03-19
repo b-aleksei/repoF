@@ -2911,8 +2911,8 @@ ol li {
   height: calc(100 * var(--vh, 1vh) - var(--header-height));
   place-items: center;
   background-color: #212429;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 36, 41, 0.9)), to(rgba(33, 36, 41, 0.9))), url("../../img/content/station1.png");
-  background-image: linear-gradient(rgba(33, 36, 41, 0.9), rgba(33, 36, 41, 0.9)), url("../../img/content/station1.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 36, 41, 0.9)), to(rgba(33, 36, 41, 0.9))), url("../img/content/station1.png");
+  background-image: linear-gradient(rgba(33, 36, 41, 0.9), rgba(33, 36, 41, 0.9)), url("../img/content/station1.png");
   background-repeat: no-repeat;
   background-position: center; }
   .not-found h1 {
@@ -2938,10 +2938,7 @@ ol li {
           align-items: center;
   max-width: 490px;
   padding: 0 16px;
-  color: white;
-  /*  @media (max-width: $viewport-s) {
-    padding: 200px 16px;
-  }*/ }
+  color: white; }
   .not-found__wrap p {
     text-align: center; }
 
