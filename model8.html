@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Документация</title>
+  <title>Карточка товара</title>
   <link rel="preload" href="fonts/proximanova-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/proximanova-bold.woff2" as="font" crossorigin="anonymous">
   
     <link rel="stylesheet" href="css/style.min.css">
+  
   
   
 
@@ -18,6 +19,8 @@
 
     <script defer src="https://maps.googleapis.com/maps/api/js"></script>
   
+  <script defer src="js/models.min.js"></script>
+
 </head>
 <body class="">
 
@@ -450,305 +453,418 @@
 
 <main>
 
-  <section class="doc-page wrapper">
-    <h1 class="title">Техническая документация</h1>
-    <ul class="accordion">
-      <li class="accordion__item">
-        <button class="accordion__title accordion__title--doc symbol-corner" type="button">
-         <span class="doc-page__title-item">G FORZA BIO 5/5+</span>
-          <span class="doc-page__desc">Аэрационные станции биологической очистки сточных вод</span>
-        </button>
-        <div class="accordion__content accordion__content--doc">
-          
-
-<ul class="documentation__list">
+  <h1 class="visually-hidden">Карточка товара</h1>
   
-    <li class="documentation__item documentation__item--passport">
-      <a class="documentation__link" href="data/techpassport.txt" download="techpassport.txt">
-      <div class="documentation__wrap-img">
+
+
+<div class="product-feature wrapper">
+  <div class="product-feature__img">
+    <div class="product-feature__img-wrap product-slider-container">
+      <div class="slider swiper-wrapper">
         
-  <svg width="95" height="95">
-    <use href="#list"></use>
-  </svg>
+          <div class="swiper-slide">
+            
+  <picture>
+    <!-- 1x-555px 2x-1110px -->
+    <source type="image/webp" srcset="img/content/station1.webp 1x, img/content/station1@2x.webp 2x">
+    <img class="content-img" src="img/content/station1.png" srcset="img/content/station1@2x.png 2x" width="555" height="616" alt="G FORZA BIO 5/5+" loading="lazy" decoding="async">
+  </picture>
 
-      </div>
-      <p class="documentation__title">Технический <br> паспорт</p>
-      <div class="documentation__file">
+          </div>
         
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
+          <div class="swiper-slide">
+            
+  <picture>
+    <!-- 1x-555px 2x-1110px -->
+    <source type="image/webp" srcset="img/content/station2.webp 1x, img/content/station2@2x.webp 2x">
+    <img class="content-img" src="img/content/station2.png" srcset="img/content/station2@2x.png 2x" width="555" height="616" alt="G FORZA BIO 5/5+" loading="lazy" decoding="async">
+  </picture>
 
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--scheme">
-      <a class="documentation__link" href="data/mount-scheme.txt" download="mount-scheme.txt">
-      <div class="documentation__wrap-img">
+          </div>
         
-  <svg width="95" height="95">
-    <use href="#scheme"></use>
-  </svg>
+          <div class="swiper-slide">
+            
+  <picture>
+    <!-- 1x-555px 2x-1110px -->
+    <source type="image/webp" srcset="img/content/station3.webp 1x, img/content/station3@2x.webp 2x">
+    <img class="content-img" src="img/content/station3.png" srcset="img/content/station3@2x.png 2x" width="555" height="616" alt="G FORZA BIO 5/5+" loading="lazy" decoding="async">
+  </picture>
 
-      </div>
-      <p class="documentation__title">Монтажная <br> схема</p>
-      <div class="documentation__file">
+          </div>
         
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
       </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--rst">
-      <a class="documentation__link" href="data/certificate.txt" download="certificate.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#rst"></use>
-  </svg>
+      <div class="pagination"></div>
+    </div>
+  </div>
 
-      </div>
-      <p class="documentation__title">Сертификат соответствия</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--expert">
-      <a class="documentation__link" href="data/expert-opinion.txt" download="expert-opinion.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#eac"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Экспертное заключение</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-</ul>
-
+  <div class="feature">
+    <form class="feature__form" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
+      <h2 class="feature__title">G FORZA BIO 8/8+</h2>
+      <p class="feature__desc">Аэрационные станции биологической очистки сточных вод</p>
+      <div class="feature__fields">
+        <b>Кол-во пользователей</b>
+        <div>
+          <a class="feature__options " href="model5.html">3-5</a>
         </div>
-      </li>
-      <li class="accordion__item">
-        <button class="accordion__title accordion__title--doc symbol-corner" type="button">
-          <span class="doc-page__title-item">G FORZA LONG</span>
-          <span class="doc-page__desc">Надставные горловины для корпуса</span>
-        </button>
-        <div class="accordion__content accordion__content--doc">
-          
-
-<ul class="documentation__list">
-  
-    <li class="documentation__item documentation__item--passport">
-      <a class="documentation__link" href="data/techpassport.txt" download="techpassport.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#list"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Технический <br> паспорт</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--scheme">
-      <a class="documentation__link" href="data/mount-scheme.txt" download="mount-scheme.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#scheme"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Монтажная <br> схема</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--rst">
-      <a class="documentation__link" href="data/certificate.txt" download="certificate.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#rst"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Сертификат соответствия</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--expert">
-      <a class="documentation__link" href="data/expert-opinion.txt" download="expert-opinion.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#eac"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Экспертное заключение</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-</ul>
-
+        <div>
+          <a class="feature__options active" href="model8.html">6-8</a>
         </div>
-      </li>
-      <li class="accordion__item">
-        <button class="accordion__title accordion__title--doc symbol-corner" type="button">
-          <span class="doc-page__title-item">G FORZA LID</span>
-          <span class="doc-page__desc">Крышка-люк для станций</span>
-        </button>
-        <div class="accordion__content accordion__content--doc">
-          
-
-<ul class="documentation__list">
-  
-    <li class="documentation__item documentation__item--passport">
-      <a class="documentation__link" href="data/techpassport.txt" download="techpassport.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#list"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Технический <br> паспорт</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--scheme">
-      <a class="documentation__link" href="data/mount-scheme.txt" download="mount-scheme.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#scheme"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Монтажная <br> схема</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--rst">
-      <a class="documentation__link" href="data/certificate.txt" download="certificate.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#rst"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Сертификат соответствия</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-    <li class="documentation__item documentation__item--expert">
-      <a class="documentation__link" href="data/expert-opinion.txt" download="expert-opinion.txt">
-      <div class="documentation__wrap-img">
-        
-  <svg width="95" height="95">
-    <use href="#eac"></use>
-  </svg>
-
-      </div>
-      <p class="documentation__title">Экспертное заключение</p>
-      <div class="documentation__file">
-        
-  <svg width="18" height="18">
-    <use href="#download"></use>
-  </svg>
-
-        <span>PDF, 1.1 мб</span>
-      </div>
-      </a>
-    </li>
-  
-</ul>
-
+        <div>
+          <a class="feature__options " href="model12.html">9-12</a>
         </div>
-      </li>
-    </ul>
+      </div>
+      <a class="feature__link" href="#!" data-modal-open="specifications">Технические характеристики</a>
+      <ul class="accordion">
+        <li class="accordion__item">
+          <button class="accordion__title accordion__title--corner symbol-corner" type="button">Гарантийные обязательства</button>
+          <div class="accordion__content accordion__content--feature">
+            <div>
+            <p>Стандартная гарантия – до 3-х лет на все электрооборудование и 60 месяцев (5 лет)
+              на технологическое оборудование.</p>
+            </div>
+          </div>
+        </li>
+        <li class="accordion__item">
+          <button class="accordion__title accordion__title--corner symbol-corner" type="button">Модификации продукции</button>
+          <div class="accordion__content accordion__content--feature">
+            <div>
+              <p class="feature__model-name"><span>G FORZA BIO 8</span> самотечный режим</p>
+              <p class="feature__model-name"><span>G FORZA BIO 8+</span> самотечный режим</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a class="feature__link" href="data/presentation.txt" download="presentation.txt">Скачать презентацию</a>
+      <p class="feature__total">60 000 руб.</p>
+        <button class="btn btn--blue feature__btn" type="submit">купить</button>
+    </form>
+  </div>
+</div>
+
+  <section class="info info--why">
+  <div class="wrapper block-top-offset">
+    <h2 class="title title-border">Почему G FORZA?</h2>
+    <div class="info__list">
+      <p>Аэрационную установку G FORZA можно смонтировать на участке любой площади, в любом типе грунта, независимо от уровня грунтовых вод.</p>
+      <p>Станция G FORZA может комплектоваться как самотечной, так
+        и принудительной системой отведения сточных вод с возможностью легкого переоборудования.</p>
+      <p>
+        В условиях заложения подводящей трубы на больших глубинах высота станции наращивается удлинительными горловинами.</p>
+    </div>
+  </div>
+</section>
+
+  <section class="info info--white">
+    <div class="wrapper block-top-offset">
+      <h2 class="title title-border">3х ступенчатая система очистки
+        стоков до технической воды</h2>
+      <div class="info__list">
+        <p>G FORZA – энергозависимая установка, для работы которой требуется подача электроэнергии.</p>
+        <p>Очистное сооружение состоит из трех камер, между которыми через переливные отверстия циркулируют стоки, неоднократно проходя как грубую механическую, так и глубокую биологическую очистку за счет аэробных и анаэробных микроорганизмов, колонии которых удерживаются внутри очистного сооружения.</p>
+        <p>Непрерывность процессов позволяет достичь высокой степени очистки сточных вод. Стоки после переработки в СБО G FORZA осветлены и не имеют неприятных запахов.</p>
+        <p>Дальнейший сброс очищенной воды в дренажный колодец или сточную канаву не требует дополнительной доочистки стоков.</p>
+      </div>
+    </div>
   </section>
+
+  <section class="aerotex">
+  <div class="wrapper aerotex__wrap">
+    <p class="title mobile-title">Аэротенк</p>
+    <div class="aerotex__content">
+      <h2 class="title title-border">Аэротенк</h2>
+      <p>Нитрификация стоков, расщепление бытовых отходов и образование активного ила за счет бактерий и микроорганизмов.</p>
+    </div>
+    <div class="aerotex__wrap-img">
+      
+  <picture>
+    <!-- 1x-700px 2x-1400px -->
+    <source type="image/webp" srcset="img/content/station3.webp 1x, img/content/station3@2x.webp 2x">
+    <img class="content-img" src="img/content/station3.png" srcset="img/content/station3@2x.png 2x" width="700" height="700" alt="схема установки" loading="lazy" decoding="async">
+  </picture>
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="info">
+    <div class="wrapper block-top-offset">
+      <h2 class="title title-border">Обслуживание</h2>
+      <div class="info__list">
+        <p>Для проведения сервисных работ не требуется ассенизаторская машина, откачку излишнего ила можно производить самостоятельно с помощью встроенного сервисного эрлифта.</p>
+        <p>Биологический процесс, протекающий в СБО G FORZA, не предполагает внесения каких-либо дополнительных бактериальных добавок извне.</p>
+      </div>
+    </div>
+  </section>
+  <section class="documentation wrapper block-top-offset">
+  <h2 class="title title-border">Документация</h2>
+  
+
+<ul class="documentation__list">
+  
+    <li class="documentation__item documentation__item--passport">
+      <a class="documentation__link" href="data/techpassport.txt" download="techpassport.txt">
+      <div class="documentation__wrap-img">
+        
+  <svg width="95" height="95">
+    <use href="#list"></use>
+  </svg>
+
+      </div>
+      <p class="documentation__title">Технический <br> паспорт</p>
+      <div class="documentation__file">
+        
+  <svg width="18" height="18">
+    <use href="#download"></use>
+  </svg>
+
+        <span>PDF, 1.1 мб</span>
+      </div>
+      </a>
+    </li>
+  
+    <li class="documentation__item documentation__item--scheme">
+      <a class="documentation__link" href="data/mount-scheme.txt" download="mount-scheme.txt">
+      <div class="documentation__wrap-img">
+        
+  <svg width="95" height="95">
+    <use href="#scheme"></use>
+  </svg>
+
+      </div>
+      <p class="documentation__title">Монтажная <br> схема</p>
+      <div class="documentation__file">
+        
+  <svg width="18" height="18">
+    <use href="#download"></use>
+  </svg>
+
+        <span>PDF, 1.1 мб</span>
+      </div>
+      </a>
+    </li>
+  
+    <li class="documentation__item documentation__item--rst">
+      <a class="documentation__link" href="data/certificate.txt" download="certificate.txt">
+      <div class="documentation__wrap-img">
+        
+  <svg width="95" height="95">
+    <use href="#rst"></use>
+  </svg>
+
+      </div>
+      <p class="documentation__title">Сертификат соответствия</p>
+      <div class="documentation__file">
+        
+  <svg width="18" height="18">
+    <use href="#download"></use>
+  </svg>
+
+        <span>PDF, 1.1 мб</span>
+      </div>
+      </a>
+    </li>
+  
+    <li class="documentation__item documentation__item--expert">
+      <a class="documentation__link" href="data/expert-opinion.txt" download="expert-opinion.txt">
+      <div class="documentation__wrap-img">
+        
+  <svg width="95" height="95">
+    <use href="#eac"></use>
+  </svg>
+
+      </div>
+      <p class="documentation__title">Экспертное заключение</p>
+      <div class="documentation__file">
+        
+  <svg width="18" height="18">
+    <use href="#download"></use>
+  </svg>
+
+        <span>PDF, 1.1 мб</span>
+      </div>
+      </a>
+    </li>
+  
+</ul>
+
+</section>
+
+  
+
+
+<section class="gallery block-top-offset wrapper">
+  <h2 class="title title-border">Реализованные установки</h2>
+  <div class="gallery__wrap">
+    
+      <div class="gallery__wrap-img">
+        
+  <picture>
+    <!-- 1x-700px 2x-1400px -->
+    <source type="image/webp" srcset="img/content/forsa-img1.webp 1x, img/content/forsa-img1@2x.webp 2x">
+    <img class="content-img" src="img/content/forsa-img1.jpg" srcset="img/content/forsa-img1@2x.jpg 2x" width="700" height="700" alt="установка стоящая на земле" loading="lazy" decoding="async">
+  </picture>
+
+      </div>
+    
+      <div class="gallery__wrap-img">
+        
+  <picture>
+    <!-- 1x-700px 2x-1400px -->
+    <source type="image/webp" srcset="img/content/forsa-img2.webp 1x, img/content/forsa-img2@2x.webp 2x">
+    <img class="content-img" src="img/content/forsa-img2.jpg" srcset="img/content/forsa-img2@2x.jpg 2x" width="700" height="700" alt="установка вид сверху" loading="lazy" decoding="async">
+  </picture>
+
+      </div>
+    
+      <div class="gallery__wrap-img">
+        
+  <picture>
+    <!-- 1x-700px 2x-1400px -->
+    <source type="image/webp" srcset="img/content/forsa-img3.webp 1x, img/content/forsa-img3@2x.webp 2x">
+    <img class="content-img" src="img/content/forsa-img3.jpg" srcset="img/content/forsa-img3@2x.jpg 2x" width="700" height="700" alt="установка закопанная в землю" loading="lazy" decoding="async">
+  </picture>
+
+      </div>
+    
+      <div class="gallery__wrap-img">
+        
+  <picture>
+    <!-- 1x-700px 2x-1400px -->
+    <source type="image/webp" srcset="img/content/forsa-img4.webp 1x, img/content/forsa-img4@2x.webp 2x">
+    <img class="content-img" src="img/content/forsa-img4.jpg" srcset="img/content/forsa-img4@2x.jpg 2x" width="700" height="700" alt="люк" loading="lazy" decoding="async">
+  </picture>
+
+      </div>
+    
+  </div>
+</section>
+
+  <div id="specifications" class="modal">
+  <div class="modal__wrap">
+    <div class="modal__inner">
+      <button class="modal__close" type="button" data-modal-close="specifications">
+        
+  <svg width="26" height="26">
+    <use href="#close"></use>
+  </svg>
+
+      </button>
+      
+
+
+
+<section class="specifications specifications-wrap">
+  <h2><span class="short">Тех.</span><span class="long">Технические</span> характеристики</h2>
+  <div class="specifications__block specifications__block--basic">
+    <div class="specifications__title">
+      <h3>Основные</h3>
+    </div>
+    <dl class="specifications__list specifications__list--basic">
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Производительность, м3/сут</dt>
+          <dd class="specifications__def">1</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Материал корпуса</dt>
+          <dd class="specifications__def">Морозостойкий полиэтилен низкого давления (ПНД)</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Количество пользователей, чел:</dt>
+          <dd class="specifications__def">3-5</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Глубина врезки подводящей трубы, мм</dt>
+          <dd class="specifications__def">600</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Максимальный залповый сброс, л</dt>
+          <dd class="specifications__def">300</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Глубина врезки отводящей трубы, мм</dt>
+          <dd class="specifications__def">620</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Размер станции, ДхВ, мм</dt>
+          <dd class="specifications__def">1060х1900</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Потребляемая мощность: кВт/ч</dt>
+          <dd class="specifications__def">0,04</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Диаметр горловины, мм</dt>
+          <dd class="specifications__def">800</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Напряжение, В</dt>
+          <dd class="specifications__def">220, не требует стабилизатора напряжения</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Вес, кг</dt>
+          <dd class="specifications__def">80</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Рекомендованные параметры подводящего электрокабеля</dt>
+          <dd class="specifications__def">3x15</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Толщина корпуса, мм</dt>
+          <dd class="specifications__def">8</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Обслуживание</dt>
+          <dd class="specifications__def">Cамостоятельно без привлечения ассенизатора 1 раз в 1,5-2 года</dd>
+        </div>
+      
+        <div class="specifications__items">
+          <dt class="specifications__term">Производитель</dt>
+          <dd class="specifications__def">Россия</dd>
+        </div>
+      
+    </dl>
+  </div>
+
+  <div class="specifications__block">
+    <div class="specifications__title">
+      <h3>Комплект поставки</h3>
+    </div>
+    <ul class="specifications__list">
+      
+        <li class="specifications__items">Корпус с врезанными патрубками и крышкой</li>
+      
+        <li class="specifications__items">Дренажный насос ХХХ (опционально)</li>
+      
+        <li class="specifications__items">Компрессор ХХХ</li>
+      
+        <li class="specifications__items">Хомуты для шланга – 2 шт. (опционально)</li>
+      
+        <li class="specifications__items">Документация</li>
+      
+        <li class="specifications__items">Шланг для насоса (опционально)</li>
+      
+    </ul>
+  </div>
+</section>
+
+    </div>
+  </div>
+</div>
 
 
 </main>
