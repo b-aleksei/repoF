@@ -564,6 +564,13 @@ button,
   .gm-style-iw-d p {
     font-size: 14px; } }
 
+@media (max-width: 350px) {
+  .gm-style-iw-d h3 {
+    margin-bottom: 5px;
+    font-size: 14px; }
+  .gm-style-iw-d p {
+    font-size: 14px; } }
+
 .marked-list-blue {
   counter-reset: blue-number;
   list-style: none;
@@ -2212,6 +2219,8 @@ ol li {
   cursor: pointer;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s; }
+  .modal__close--requisites {
+    top: 60px; }
   .modal__close--dealers {
     top: 62px; }
     @media (max-width: 1024px) {
@@ -3024,3 +3033,43 @@ ol li {
   font-weight: 600;
   font-size: 20px;
   color: #000; }
+
+.requisites {
+  padding: 56px; }
+  .requisites h2 {
+    margin-bottom: 85px; }
+  @media (max-width: 768px) {
+    .requisites {
+      padding: 16px 0 50px; }
+      .requisites h2 {
+        margin-bottom: 60px;
+        padding: 0 60px 16px 16px;
+        border-bottom: 1px solid rgba(60, 60, 59, 0.1); } }
+
+.requisites__list-wrap {
+  margin-left: 72px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; }
+  @media (max-width: 1024px) {
+    .requisites__list-wrap {
+      margin-left: 0; } }
+  @media (max-width: 768px) {
+    .requisites__list-wrap {
+      padding: 0 16px;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+
+.requisites__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 40px; }
+  .requisites__list dt {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000; }
+  .requisites__list dd {
+    color: #7C8087; }
