@@ -2501,8 +2501,7 @@ ol li {
           align-items: center; }
   .product-feature--models {
     min-height: initial;
-    padding-top: 80px;
-    padding-bottom: 80px; }
+    padding: 80px 0 80px 0; }
   .product-feature--long {
     padding-top: 0;
     padding-bottom: 0; }
@@ -2525,6 +2524,9 @@ ol li {
       -ms-grid-columns: initial;
       grid-template-columns: initial;
       gap: 20px; } }
+
+.feature--slider {
+  padding: 80px 0 80px 0; }
 
 .product-feature__img {
   position: relative;
