@@ -765,8 +765,8 @@
 
 <ul class="documentation__list">
   
-    <li class="documentation__item documentation__item--passport">
-      <a class="documentation__link" href="data/techpassport.txt" download="techpassport.txt">
+    <li class="documentation__item">
+      <a class="documentation__link documentation__link--passport" href="data/techpassport.txt" download="techpassport.txt">
       <div class="documentation__wrap-img">
         
   <svg width="95" height="95">
@@ -786,8 +786,8 @@
       </a>
     </li>
   
-    <li class="documentation__item documentation__item--scheme">
-      <a class="documentation__link" href="data/mount-scheme.txt" download="mount-scheme.txt">
+    <li class="documentation__item">
+      <a class="documentation__link documentation__link--scheme" href="data/mount-scheme.txt" download="mount-scheme.txt">
       <div class="documentation__wrap-img">
         
   <svg width="95" height="95">
@@ -807,8 +807,8 @@
       </a>
     </li>
   
-    <li class="documentation__item documentation__item--rst">
-      <a class="documentation__link" href="data/certificate.txt" download="certificate.txt">
+    <li class="documentation__item">
+      <a class="documentation__link documentation__link--rst" href="data/certificate.txt" download="certificate.txt">
       <div class="documentation__wrap-img">
         
   <svg width="95" height="95">
@@ -828,8 +828,8 @@
       </a>
     </li>
   
-    <li class="documentation__item documentation__item--expert">
-      <a class="documentation__link" href="data/expert-opinion.txt" download="expert-opinion.txt">
+    <li class="documentation__item">
+      <a class="documentation__link documentation__link--expert" href="data/expert-opinion.txt" download="expert-opinion.txt">
       <div class="documentation__wrap-img">
         
   <svg width="95" height="95">
@@ -873,10 +873,11 @@
   </div>
 </section>
 
-  <div id="agreement" class="modal">
-  <div class="modal__wrap">
-    <div class="modal__inner">
-      <button class="modal__close" type="button" data-modal-close="agreement">
+  <div id="agreement" class="modal bounce-in-right">
+
+  <div class="modal-wrap">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" data-modal-close="agreement">
         
   <svg width="26" height="26">
     <use href="#close"></use>
@@ -943,10 +944,10 @@
 
 
 </main>
-<div id="dealers-map" class="modal">
-  <div class="modal__wrap">
-    <div class="modal__inner">
-      <button class="modal__close modal__close--dealers" type="button" data-modal-close="dealers-map">
+<div id="dealers-map" class="modal bounceInRight">
+  <div class="modal-wrap">
+    <div class="modal-inner">
+      <button class="modal-close modal-close--dealers" type="button" data-modal-close="dealers-map">
         
   <svg width="26" height="26">
     <use href="#close"></use>
@@ -1027,7 +1028,7 @@
         <a class="footer__phone" href="tel:+88005555555">8-800-555-55-55</a>
         <a class="footer__email" href="mailto:info@g-forza.ru">info@g-forza.ru</a>
       </div>
-        <button class="btn btn--map footer__btn-map" type="button">Где купить?</button>
+        <button class="btn btn--map footer__btn-map" type="button" data-modal-open="dealers-map">Где купить?</button>
     </div>
     <div class="footer__bottom">
       <p class="footer__copyright">© 2020 - 2021, G Forza</p>
