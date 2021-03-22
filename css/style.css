@@ -1805,7 +1805,8 @@ ol li {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  color: #7C8087; }
   @media (max-width: 1024px) {
     .documentation__file {
       font-size: 12px; } }
