@@ -2312,9 +2312,23 @@ ol li {
   visibility: hidden;
   z-index: 99;
   scrollbar-width: none;
-  -ms-overflow-style: none; }
+  -ms-overflow-style: none;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  -webkit-transition-property: visibility, -webkit-transform;
+  transition-property: visibility, -webkit-transform;
+  transition-property: visibility, transform;
+  transition-property: visibility, transform, -webkit-transform;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out; }
   .modal::-webkit-scrollbar {
     display: none; }
+  .modal.active {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
 
 .scale-in {
   opacity: 0;
