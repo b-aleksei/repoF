@@ -2778,7 +2778,8 @@ ol li {
       -ms-scroll-snap-type: y mandatory;
           scroll-snap-type: y mandatory;
       gap: 0;
-      overflow-y: scroll; }
+      overflow-y: scroll;
+      scrollbar-width: none; }
       .slider::-webkit-scrollbar {
         display: none; } }
   .slider.no-event {
@@ -2807,6 +2808,9 @@ ol li {
   gap: 16px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
+  @media (min-width: 769px) {
+    .pagination {
+      visibility: hidden; } }
   .pagination span {
     width: 12px;
     height: 12px;
