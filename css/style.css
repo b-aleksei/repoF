@@ -788,6 +788,11 @@ button,
       width: 15px;
       height: 15px; }
 
+.circle-text {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #7BA6DB; }
+
 .text-page {
   max-width: 810px;
   margin: 0 auto;
@@ -2775,14 +2780,7 @@ ol li {
   width: 100%; }
   @media (max-width: 768px) {
     .slider {
-      height: calc(100 * var(--vh, 1vh) - var(--header-height));
-      -ms-scroll-snap-type: y mandatory;
-          scroll-snap-type: y mandatory;
-      gap: 0;
-      overflow-y: scroll;
-      scrollbar-width: none; }
-      .slider::-webkit-scrollbar {
-        display: none; } }
+      gap: 30px; } }
   .slider.no-event {
     pointer-events: none; }
 
@@ -2792,8 +2790,7 @@ ol li {
     .slider__item {
       -ms-flex-negative: 0;
           flex-shrink: 0;
-      height: auto;
-      scroll-snap-align: start; } }
+      height: auto; } }
   .slider__item img {
     color: white;
     -o-object-fit: contain;
@@ -3037,7 +3034,7 @@ ol li {
       margin: 32px 0 0; } }
 
 .aerotex__wrap-img {
-  width: 33%;
+  max-width: 555px;
   -ms-flex-negative: 0;
       flex-shrink: 0; }
   .aerotex__wrap-img video {
