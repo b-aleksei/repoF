@@ -2693,7 +2693,10 @@ ol li {
   .product-feature--slider {
     padding: 0 16px 80px 16px; }
   .product-feature--models {
-    min-height: initial; }
+    min-height: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .product-feature--long {
     padding-top: 0;
     padding-bottom: 0; }
@@ -2767,6 +2770,8 @@ ol li {
   display: flex;
   width: 100%;
   color: white; }
+  .product-feature__img-wrap-models a {
+    display: block; }
 
 .swiper-container {
   position: relative;
@@ -2869,6 +2874,11 @@ ol li {
   font-weight: 700;
   font-size: 40px;
   line-height: 1; }
+  .feature__title a {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .feature__title a:hover, .feature__title a:focus {
+      color: #89B8F1; }
   @media (max-width: 1024px) {
     .feature__title {
       font-size: Max(Min(3.9vw, 40px), 24px); } }
