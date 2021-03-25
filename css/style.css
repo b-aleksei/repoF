@@ -2799,7 +2799,7 @@ ol li {
       padding-bottom: 600px; } }
   @media (max-width: 400px) {
     .slider {
-      padding-top: 70px;
+      padding-top: 40px;
       padding-bottom: 550px; } }
   .slider.no-event {
     pointer-events: none; }
