@@ -2716,24 +2716,26 @@ ol li {
       grid-template-columns: 50% 50%; } }
   @media (max-width: 768px) {
     .product-feature {
-      -ms-grid-columns: initial;
-      grid-template-columns: initial;
-      gap: 20px;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      gap: 0;
       justify-items: center; } }
 
 .feature--slider {
   --form-padding: 140px; }
+  @media (max-width: 768px) {
+    .feature--slider {
+      width: 100%;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-area: 1 / 1 / 2 / 2;
+      z-index: 2; } }
 
 @media (max-width: 1024px) {
   .feature--models {
     padding: 0 16px; } }
-
-.feature__form {
-  position: sticky;
-  top: calc(var(--header-height) + var(--form-padding)); }
-  @media (max-width: 768px) {
-    .feature__form {
-      position: static; } }
 
 .product-feature__img {
   position: relative;
@@ -2777,6 +2779,14 @@ ol li {
   position: relative;
   width: 100%;
   overflow: hidden; }
+  @media (max-width: 768px) {
+    .swiper-container {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-area: 1 / 1 / 2 / 2;
+      z-index: 1; } }
 
 .slider {
   display: -ms-grid;
@@ -2785,7 +2795,12 @@ ol li {
   width: 100%; }
   @media (max-width: 768px) {
     .slider {
-      gap: 30px; } }
+      gap: 100px;
+      padding-bottom: 600px; } }
+  @media (max-width: 400px) {
+    .slider {
+      padding-top: 70px;
+      padding-bottom: 550px; } }
   .slider.no-event {
     pointer-events: none; }
 
@@ -2868,6 +2883,17 @@ ol li {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    .feature__form {
+      padding-top: 50px; } }
+
+.feature__form-wrap {
+  position: sticky;
+  top: calc(var(--header-height) + var(--form-padding)); }
+  @media (max-width: 768px) {
+    .feature__form-wrap {
+      top: calc(100 * var(--vh, 1vh) - 240px);
+      background-color: white; } }
 
 .feature__title {
   margin-bottom: 16px;
