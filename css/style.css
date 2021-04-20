@@ -2358,7 +2358,7 @@ ol li {
   contain: strict;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
   width: 100vw;
   height: calc(100 * var(--vh, 1vh));
   overflow-y: scroll;
@@ -2366,8 +2366,6 @@ ol li {
   z-index: 99;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  -webkit-transform: translate3d(100%, 0, 0);
-          transform: translate3d(100%, 0, 0);
   -webkit-transition-property: visibility, -webkit-transform;
   transition-property: visibility, -webkit-transform;
   transition-property: visibility, transform;
@@ -2380,8 +2378,8 @@ ol li {
     display: none; }
   .modal.active {
     visibility: visible;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0); }
 
 .scale-in {
   opacity: 0;
