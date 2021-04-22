@@ -368,6 +368,32 @@ button,
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0); } }
 
+.intersect > .application__label,
+.intersect > .application__submit,
+.intersect > .documentation__item,
+.intersect.info__list,
+.info .title-border.intersect,
+.intersect.stable__item,
+.intersect > .models__item {
+  -webkit-animation-name: slideToPlace;
+          animation-name: slideToPlace;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+@-webkit-keyframes slideToPlace {
+  to {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; } }
+
+@keyframes slideToPlace {
+  to {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; } }
+
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none; }
 
@@ -518,6 +544,12 @@ button,
       padding-left: 0; }
       .title-border::before {
         content: none; } }
+
+.info .title-border.no-intersect {
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
 
 .block-top-offset {
   padding-top: 160px;
@@ -1528,6 +1560,9 @@ ol li {
     letter-spacing: .015em; }
   .info__list p + p {
     margin-top: 20px; }
+  .info__list.no-intersect {
+    -webkit-transform: translate3d(70%, 0, 0);
+            transform: translate3d(70%, 0, 0); }
 
 .info--why .info__list {
   max-width: 750px; }
@@ -1585,6 +1620,11 @@ ol li {
       .stable__item p {
         padding: 0;
         text-align: left; } }
+  .stable__item.no-intersect {
+    -webkit-transform: translate3d(0, 80px, 0);
+            transform: translate3d(0, 80px, 0);
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s; }
 
 .stable__img-wrap {
   display: -webkit-box;
@@ -1640,6 +1680,24 @@ ol li {
     .models__list {
       -ms-grid-columns: initial;
       grid-template-columns: initial; } }
+
+.no-intersect > .models__item:nth-child(1) {
+  -webkit-transform: translate3d(0, 80px, 0);
+          transform: translate3d(0, 80px, 0);
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
+
+.no-intersect > .models__item:nth-child(2) {
+  -webkit-transform: translate3d(0, 80px, 0);
+          transform: translate3d(0, 80px, 0);
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s; }
+
+.no-intersect > .models__item:nth-child(3) {
+  -webkit-transform: translate3d(0, 80px, 0);
+          transform: translate3d(0, 80px, 0);
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s; }
 
 .models__item {
   display: -webkit-box;
@@ -1774,6 +1832,30 @@ ol li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.no-intersect > .documentation__item:nth-child(1) {
+  -webkit-transform: translate3d(-200%, 0, 0);
+          transform: translate3d(-200%, 0, 0);
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s; }
+
+.no-intersect > .documentation__item:nth-child(2) {
+  -webkit-transform: translate3d(-200%, 0, 0);
+          transform: translate3d(-200%, 0, 0);
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
+
+.no-intersect > .documentation__item:nth-child(3) {
+  -webkit-transform: translate3d(200%, 0, 0);
+          transform: translate3d(200%, 0, 0);
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
+
+.no-intersect > .documentation__item:nth-child(4) {
+  -webkit-transform: translate3d(200%, 0, 0);
+          transform: translate3d(200%, 0, 0);
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s; }
 
 .documentation__link {
   width: 100%;
@@ -1949,6 +2031,18 @@ ol li {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+
+.no-intersect > .application__label {
+  -webkit-transform: translate3d(-150%, 0, 0);
+          transform: translate3d(-150%, 0, 0);
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
+
+.no-intersect > .application__submit {
+  -webkit-transform: translate3d(150%, 0, 0);
+          transform: translate3d(150%, 0, 0);
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
 
 .application__label {
   position: relative;
