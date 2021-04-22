@@ -81,6 +81,7 @@ main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  overflow-x: clip;
   overflow-x: hidden; }
 
 *:focus:not(:focus-visible) {
