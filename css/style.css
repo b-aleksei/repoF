@@ -1125,7 +1125,7 @@ ol li {
   @media (max-width: 1024px) {
     .header__right {
       position: absolute;
-      top: 0;
+      bottom: 100%;
       left: 0;
       width: 100%;
       height: calc(100 * var(--vh, 1vh));
@@ -1175,8 +1175,8 @@ ol li {
 
 @media (max-width: 1024px) {
   .nav-menu-active .header__right {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
     visibility: visible; } }
 
 @media (max-width: 1024px) {
