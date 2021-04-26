@@ -80,9 +80,7 @@ main {
           flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1;
-  overflow-x: clip;
-  overflow-x: hidden; }
+          flex-grow: 1; }
 
 *:focus:not(:focus-visible) {
   outline: none; }
@@ -1543,7 +1541,8 @@ ol li {
       margin-bottom: 72px; } }
 
 .info {
-  background: #F4F6FA; }
+  background: #F4F6FA;
+  overflow-x: hidden; }
   .info--white {
     background: white; }
 
@@ -1810,11 +1809,13 @@ ol li {
     .models__btn--more:hover, .models__btn--more:focus {
       color: white; }
 
-.documentation h2 {
-  margin-bottom: 80px; }
-  @media (max-width: 768px) {
-    .documentation h2 {
-      margin-bottom: 40px; } }
+.documentation {
+  overflow-x: hidden; }
+  .documentation h2 {
+    margin-bottom: 80px; }
+    @media (max-width: 768px) {
+      .documentation h2 {
+        margin-bottom: 40px; } }
 
 .documentation__list {
   display: -ms-grid;
@@ -1951,7 +1952,8 @@ ol li {
         margin-right: 8px; } }
 
 .application {
-  background: #F4F6FA; }
+  background: #F4F6FA;
+  overflow-x: hidden; }
 
 .application__wrap {
   display: -webkit-box;
